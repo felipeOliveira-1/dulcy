@@ -2486,7 +2486,7 @@ form.style1 .file[data-filename=""]:before {
 	}
 	
 	.container.style5 {
-		min-height: 46rem;
+		min-height: 50rem;
 	}
 	
 	.container.style5:not(:first-child) {
@@ -3448,7 +3448,7 @@ form.style1 .file[data-filename=""]:before {
 	}
 	
 	.container.style5 {
-		min-height: 34.5rem;
+		min-height: 37.5rem;
 	}
 	
 	.container.style2 > .wrapper > .inner {
