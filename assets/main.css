@@ -534,143 +534,6 @@ body.is-instant:after {
 	transition: none;
 }
 
-.buttons {
-	cursor: default;
-	display: flex;
-	justify-content: var(--flex-alignment);
-	letter-spacing: 0;
-	padding: 0;
-}
-
-.buttons li {
-	max-width: 100%;
-}
-
-.buttons li a {
-	align-items: center;
-	justify-content: center;
-	max-width: 100%;
-	text-align: center;
-	text-decoration: none;
-	vertical-align: middle;
-	white-space: nowrap;
-}
-
-.buttons.style1 {
-	justify-content: center;
-	gap: 0rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.buttons.style1:not(:first-child) {
-	margin-top: 6rem !important;
-}
-
-.buttons.style1:not(:last-child) {
-	margin-bottom: 6rem !important;
-}
-
-.buttons.style1 li a {
-	display: inline-flex;
-	width: 15rem;
-	height: 4rem;
-	line-height: 4rem;
-	padding: 0 0.5rem;
-	vertical-align: middle;
-	font-family: 'Inter', sans-serif;
-	font-size: 1em;
-	font-weight: 700;
-	border-radius: 2rem;
-	flex-direction: row-reverse;
-	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-.buttons.style1 li a svg {
-	display: block;
-	fill: #000000;
-	flex-grow: 0;
-	flex-shrink: 0;
-	height: 100%;
-	min-width: 16px;
-	width: 1em;
-	margin-left: 0.5em;
-	margin-right: calc(-0.125em + 0rem);
-	transition: fill 0.25s ease;
-}
-
-.buttons.style1 li a .label {
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.buttons.style1 .button {
-	background-color: #FFFFFF;
-	color: #000000;
-}
-
-.buttons.style1 .button svg {
-	fill: rgba(0,0,0,0.42);
-}
-
-.buttons.style1 .button:hover {
-	background-color: rgba(255,255,255,0.902) !important;
-}
-
-.buttons.style2 {
-	gap: 0.75rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.buttons.style2 li a {
-	display: inline-flex;
-	width: 8rem;
-	height: 3.5rem;
-	line-height: 3.5rem;
-	padding: 0 0.5rem;
-	vertical-align: middle;
-	font-family: 'Inter', sans-serif;
-	font-size: 1em;
-	font-weight: 700;
-	border-radius: 2rem;
-	flex-direction: row-reverse;
-	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-.buttons.style2 li a svg {
-	display: block;
-	fill: #000000;
-	flex-grow: 0;
-	flex-shrink: 0;
-	height: 100%;
-	min-width: 16px;
-	width: 1em;
-	margin-left: 0.5em;
-	margin-right: calc(-0.125em + 0rem);
-	transition: fill 0.25s ease;
-}
-
-.buttons.style2 li a .label {
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.buttons.style2 .button {
-	background-color: #FFFFFF;
-	color: #000000;
-}
-
-.buttons.style2 .button svg {
-	fill: rgba(0,0,0,0.42);
-}
-
-.buttons.style2 .button:hover {
-	background-color: rgba(255,255,255,0.902) !important;
-}
-
 .container {
 	position: relative;
 }
@@ -720,7 +583,7 @@ body.is-instant:after {
 	background-size: cover;
 	border-color: rgba(0,0,0,0.141);
 	border-style: solid;
-	border-width: 5px;
+	border-width: 1px;
 }
 
 .container.style5:not(:first-child) {
@@ -921,7 +784,7 @@ body.is-instant:after {
 	background-repeat: repeat, repeat;
 	border-color: rgba(0,0,0,0.71);
 	border-style: solid;
-	border-width: 5px;
+	border-width: 1px;
 }
 
 .container.style2:not(:first-child) {
@@ -1967,6 +1830,81 @@ h1.style3 span.p:nth-child(n + 2), h2.style3 span.p:nth-child(n + 2), h3.style3 
 	margin-top: 1rem;
 }
 
+.buttons {
+	cursor: default;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	letter-spacing: 0;
+	padding: 0;
+}
+
+.buttons li {
+	max-width: 100%;
+}
+
+.buttons li a {
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.buttons.style2 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.buttons.style2 li a {
+	display: inline-flex;
+	width: 8rem;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	padding: 0 0.5rem;
+	vertical-align: middle;
+	font-family: 'Inter', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	border-radius: 2rem;
+	flex-direction: row-reverse;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.buttons.style2 li a svg {
+	display: block;
+	fill: #000000;
+	flex-grow: 0;
+	flex-shrink: 0;
+	height: 100%;
+	min-width: 16px;
+	width: 1em;
+	margin-left: 0.5em;
+	margin-right: calc(-0.125em + 0rem);
+	transition: fill 0.25s ease;
+}
+
+.buttons.style2 li a .label {
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.buttons.style2 .button {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.buttons.style2 .button svg {
+	fill: rgba(0,0,0,0.42);
+}
+
+.buttons.style2 .button:hover {
+	background-color: rgba(255,255,255,0.902) !important;
+}
+
 form {
 	display: flex;
 	justify-content: var(--flex-alignment);
@@ -2535,32 +2473,6 @@ form.style1 .file[data-filename=""]:before {
 		object-fit: cover;
 		object-position: center;
 		width: 100% !important;
-	}
-	
-	.buttons.style1:not(:first-child) {
-		margin-top: 6rem !important;
-	}
-	
-	.buttons.style1:not(:last-child) {
-		margin-bottom: 6rem !important;
-	}
-	
-	.buttons.style1 li a {
-		letter-spacing: 0rem;
-		font-size: 1em;
-	}
-	
-	.buttons.style1 li a svg {
-		width: 1em;
-	}
-	
-	.buttons.style2 li a {
-		letter-spacing: 0rem;
-		font-size: 1em;
-	}
-	
-	.buttons.style2 li a svg {
-		width: 1em;
 	}
 	
 	.container.style5 {
@@ -3399,6 +3311,15 @@ form.style1 .file[data-filename=""]:before {
 		line-height: 1.75;
 	}
 	
+	.buttons.style2 li a {
+		letter-spacing: 0rem;
+		font-size: 1em;
+	}
+	
+	.buttons.style2 li a svg {
+		width: 1em;
+	}
+	
 	form.style1 label:first-child {
 		font-size: 1em;
 		line-height: 1.5;
@@ -3437,20 +3358,6 @@ form.style1 .file[data-filename=""]:before {
 		height: 7rem !important;
 	}
 	
-	.buttons.style1 li a {
-		width: 9.75rem;
-	}
-	
-	.buttons.style2 {
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-	
-	.buttons.style2 li a {
-		max-width: 32rem;
-		width: 100%;
-	}
-	
 	
 	
 	.container.style2 > .wrapper > .inner {
@@ -3475,6 +3382,16 @@ form.style1 .file[data-filename=""]:before {
 	
 	.container.style7 > .wrapper > .inner {
 		--spacing: 1.3125rem;
+	}
+	
+	.buttons.style2 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	.buttons.style2 li a {
+		max-width: 32rem;
+		width: 100%;
 	}
 	
 	form.style1 .actions button {
@@ -3510,14 +3427,6 @@ form.style1 .file[data-filename=""]:before {
 	
 	.image.style2 .frame {
 		height: 6.125rem !important;
-	}
-	
-	.buttons.style1 {
-		gap: 0rem;
-	}
-	
-	.buttons.style2 {
-		gap: 0.5625rem;
 	}
 	
 	.container.style5 > .wrapper > .inner {
@@ -3610,6 +3519,10 @@ form.style1 .file[data-filename=""]:before {
 	
 	h1.style3, h2.style3, h3.style3, p.style3 {
 		font-size: 1em;
+	}
+	
+	.buttons.style2 {
+		gap: 0.5625rem;
 	}
 	
 	.icons.style1 {

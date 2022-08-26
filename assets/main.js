@@ -1615,7 +1615,7 @@
 				},
 				images: [
 					{
-						src: 'assets/images/container01-1652c5c0.jpg',
+						src: 'assets/images/container01-20da25b1.jpg',
 						position: 'center',
 						motion: 'left',
 						speed: 2,
