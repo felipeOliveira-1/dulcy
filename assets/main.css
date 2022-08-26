@@ -1813,9 +1813,9 @@ h1.style3, h2.style3, h3.style3, p.style3 {
 	text-align: center;
 	color: rgba(255,255,255,0.259);
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1em;
+	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h1.style3 a, h2.style3 a, h3.style3 a, p.style3 a {
@@ -1853,6 +1853,7 @@ h1.style3 span.p:nth-child(n + 2), h2.style3 span.p:nth-child(n + 2), h3.style3 
 }
 
 .buttons.style2 {
+	justify-content: center;
 	gap: 0.75rem;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -2349,8 +2350,17 @@ form.style1 .file[data-filename=""]:before {
 }
 
 .icons.style1 {
+	justify-content: center;
 	font-size: 1.625em;
 	gap: 1.375rem;
+}
+
+.icons.style1:not(:first-child) {
+	margin-top: 2.5rem !important;
+}
+
+.icons.style1:not(:last-child) {
+	margin-bottom: 2.5rem !important;
 }
 
 .icons.style1 li a {
@@ -2375,11 +2385,11 @@ form.style1 .file[data-filename=""]:before {
 }
 
 .icons.style1 a:hover {
-	border-color: #33DAFF !important;
+	border-color: rgba(140,0,0,0.749) !important;
 }
 
 .icons.style1 a:hover svg {
-	fill: #33DAFF !important;
+	fill: rgba(140,0,0,0.749) !important;
 }
 
 .icons.style1 li a + svg {
@@ -3307,7 +3317,7 @@ form.style1 .file[data-filename=""]:before {
 	h1.style3, h2.style3, h3.style3, p.style3 {
 		letter-spacing: 0rem;
 		width: 100%;
-		font-size: 1em;
+		font-size: 0.75em;
 		line-height: 1.75;
 	}
 	
@@ -3347,6 +3357,14 @@ form.style1 .file[data-filename=""]:before {
 		font-size: 1.375em;
 		gap: 0.75rem;
 	}
+	
+	.icons.style1:not(:first-child) {
+		margin-top: 1.875rem !important;
+	}
+	
+	.icons.style1:not(:last-child) {
+		margin-bottom: 1.875rem !important;
+	}
 }
 
 @media (max-width: 480px) {
@@ -3384,14 +3402,8 @@ form.style1 .file[data-filename=""]:before {
 		--spacing: 1.3125rem;
 	}
 	
-	.buttons.style2 {
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-	
 	.buttons.style2 li a {
-		max-width: 32rem;
-		width: 100%;
+		width: 8rem;
 	}
 	
 	form.style1 .actions button {
@@ -3518,7 +3530,7 @@ form.style1 .file[data-filename=""]:before {
 	}
 	
 	h1.style3, h2.style3, h3.style3, p.style3 {
-		font-size: 1em;
+		font-size: 0.75em;
 	}
 	
 	.buttons.style2 {
