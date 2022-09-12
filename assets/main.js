@@ -1,4 +1,4 @@
-
+/* Carrd Site JS | carrd.co | License: MIT */
 
 (function() {
 
@@ -1632,6 +1632,98 @@
 						src: 'assets/images/container01-d0363ad5.jpg',
 						position: 'center',
 						motion: 'up',
+						speed: 2,
+						caption: 'Untitled',
+					},
+				]
+			});
+		
+		})();
+	
+	// Slideshow: slideshow01.
+		(function() {
+		
+			new slideshowBackground('#slideshow01', {
+				target: '#slideshow01 .bg',
+				wait: 0,
+				defer: true,
+				transition: {
+					style: 'crossfade',
+					speed: 1000,
+					delay: 3000,
+				},
+				images: [
+					{
+						src: 'assets/images/slideshow01-eea31999.jpg',
+						position: 'center',
+						motion: 'none',
+						speed: 2,
+						caption: 'Untitled',
+					},
+					{
+						src: 'assets/images/slideshow01-794be64e.jpg',
+						position: 'center',
+						motion: 'none',
+						speed: 2,
+						caption: 'Untitled',
+					},
+					{
+						src: 'assets/images/slideshow01-e770027b.jpg',
+						position: 'center',
+						motion: 'none',
+						speed: 2,
+						caption: 'Untitled',
+					},
+					{
+						src: 'assets/images/slideshow01-738b389c.jpg',
+						position: 'center',
+						motion: 'none',
+						speed: 2,
+						caption: 'Untitled',
+					},
+				]
+			});
+		
+		})();
+	
+	// Slideshow: slideshow02.
+		(function() {
+		
+			new slideshowBackground('#slideshow02', {
+				target: '#slideshow02 .bg',
+				wait: 0,
+				defer: true,
+				transition: {
+					style: 'crossfade',
+					speed: 1000,
+					delay: 4000,
+				},
+				images: [
+					{
+						src: 'assets/images/slideshow02-03ef1153.jpg',
+						position: 'center',
+						motion: 'none',
+						speed: 2,
+						caption: 'Untitled',
+					},
+					{
+						src: 'assets/images/slideshow02-71fd8983.jpg',
+						position: 'center',
+						motion: 'none',
+						speed: 2,
+						caption: 'Untitled',
+					},
+					{
+						src: 'assets/images/slideshow02-baee1a06.jpg',
+						position: 'center',
+						motion: 'none',
+						speed: 2,
+						caption: 'Untitled',
+					},
+					{
+						src: 'assets/images/slideshow02-6309181a.jpg',
+						position: 'center',
+						motion: 'none',
 						speed: 2,
 						caption: 'Untitled',
 					},

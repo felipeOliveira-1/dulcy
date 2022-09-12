@@ -499,9 +499,13 @@ body.is-instant:after {
 	border-bottom-right-radius: inherit;
 }
 
+.image.style2 {
+	text-align: center;
+}
+
 .image.style2 .frame {
-	width: 100vw;
-	height: 26rem;
+	max-width: 100%;
+	width: auto;
 	transition: none;
 }
 
@@ -519,7 +523,6 @@ body.is-instant:after {
 .image.style1 .frame {
 	max-width: 100%;
 	width: auto;
-	border-radius: 0.625rem;
 	transition: none;
 }
 
@@ -2097,6 +2100,11 @@ form .actions button:disabled {
 	}
 }
 
+form.style1 {
+	justify-content: center;
+	text-align: center;
+}
+
 form.style1 .inner > * {
 	margin: 1.75rem 0 0 0;
 	max-width: 100%;
@@ -2310,6 +2318,96 @@ form.style1 .file[data-filename=""]:before {
 	opacity: 0.55;
 }
 
+.slideshow {
+	display: block;
+	max-width: 100%;
+	position: relative;
+}
+
+.slideshow .content {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.slideshow .bg {
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	z-index: 1;
+}
+
+.slideshow.full .bg {
+	display: block;
+}
+
+.slideshow.full:first-child .content {
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.slideshow.full:last-child .content {
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.slideshow.full:first-child .bg {
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.slideshow.full:last-child .bg {
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+#slideshow01 .bg {
+	width: 42.75rem;
+	height: 27rem;
+	background-color: #000000;
+}
+
+#slideshow01 .bg > .slow {
+	animation-duration: 30s;
+}
+
+#slideshow01 .bg > .normal {
+	animation-duration: 22.5s;
+}
+
+#slideshow01 .bg > .fast {
+	animation-duration: 15s;
+}
+
+#slideshow01 .bg > div {
+	transition-duration: 1s;
+}
+
+#slideshow02 .bg {
+	width: 42.75rem;
+	height: 27rem;
+	background-color: #000000;
+}
+
+#slideshow02 .bg > .slow {
+	animation-duration: 40s;
+}
+
+#slideshow02 .bg > .normal {
+	animation-duration: 30s;
+}
+
+#slideshow02 .bg > .fast {
+	animation-duration: 20s;
+}
+
+#slideshow02 .bg > div {
+	transition-duration: 1s;
+}
+
 .icons {
 	display: flex;
 	flex-wrap: wrap;
@@ -2424,6 +2522,30 @@ form.style1 .file[data-filename=""]:before {
 	.container.style5 > .slideshow-background > .fast {
 		animation-duration: 22.5s;
 	}
+	
+	#slideshow01 .bg > .slow {
+		animation-duration: 22.5s;
+	}
+	
+	#slideshow01 .bg > .normal {
+		animation-duration: 16.875s;
+	}
+	
+	#slideshow01 .bg > .fast {
+		animation-duration: 11.25s;
+	}
+	
+	#slideshow02 .bg > .slow {
+		animation-duration: 30s;
+	}
+	
+	#slideshow02 .bg > .normal {
+		animation-duration: 22.5s;
+	}
+	
+	#slideshow02 .bg > .fast {
+		animation-duration: 15s;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -2468,7 +2590,7 @@ form.style1 .file[data-filename=""]:before {
 	}
 	
 	.image.style2 .frame {
-		height: 8.75rem !important;
+		width: 28.125rem;
 	}
 	
 	.image.style2 img {
@@ -3353,6 +3475,40 @@ form.style1 .file[data-filename=""]:before {
 		letter-spacing: 0rem;
 	}
 	
+	#slideshow01 .bg {
+		width: 42.75rem;
+		height: 27rem !important;
+	}
+	
+	#slideshow01 .bg > .slow {
+		animation-duration: 15s;
+	}
+	
+	#slideshow01 .bg > .normal {
+		animation-duration: 11.25s;
+	}
+	
+	#slideshow01 .bg > .fast {
+		animation-duration: 7.5s;
+	}
+	
+	#slideshow02 .bg {
+		width: 42.75rem;
+		height: 27rem !important;
+	}
+	
+	#slideshow02 .bg > .slow {
+		animation-duration: 20s;
+	}
+	
+	#slideshow02 .bg > .normal {
+		animation-duration: 15s;
+	}
+	
+	#slideshow02 .bg > .fast {
+		animation-duration: 10s;
+	}
+	
 	.icons.style1 {
 		font-size: 1.375em;
 		gap: 0.75rem;
@@ -3370,10 +3526,6 @@ form.style1 .file[data-filename=""]:before {
 @media (max-width: 480px) {
 	#main > .inner {
 		--spacing: 0rem;
-	}
-	
-	.image.style2 .frame {
-		height: 7rem !important;
 	}
 	
 	
@@ -3435,10 +3587,6 @@ form.style1 .file[data-filename=""]:before {
 	
 	#main > .inner > .active > .full:last-child {
 		margin-bottom: -2.25rem !important;
-	}
-	
-	.image.style2 .frame {
-		height: 6.125rem !important;
 	}
 	
 	.container.style5 > .wrapper > .inner {
